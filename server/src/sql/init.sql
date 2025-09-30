@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS expenses (
+  id SERIAL PRIMARY KEY,
+  title TEXT NOT NULL,
+  amount NUMERIC(12,2) NOT NULL CHECK (amount >= 0),
+  category TEXT NOT NULL,
+  spent_on DATE NOT NULL DEFAULT CURRENT_DATE,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW()
+);

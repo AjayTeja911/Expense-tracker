@@ -1,0 +1,7 @@
+GET http://localhost:3000/expenses → All expenses
+
+POST http://localhost:3000/expenses → Add an expense
+
+GET http://localhost:3000/expenses/total → Total
+
+GET http://localhost:3000/expenses/food → Filter
